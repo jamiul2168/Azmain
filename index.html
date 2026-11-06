@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Azmaeen Khan | Welcome</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f2e6; --bg2:#efe6d1; --card:#fffaf0; --ink:#17203a; --mute:#5b6178;
+  --gold:#a47a26; --gold2:#c99a3e; --line:rgba(164,122,38,.4); --teal:#1d6f73;
+  --glow:rgba(201,154,62,.18);
+  --serif:"Cormorant Garamond","Playfair Display",Georgia,serif;
+  --bn:"Hind Siliguri","Noto Sans Bengali",system-ui,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#090d1a; --bg2:#0f1730; --card:#111a33; --ink:#f3ead3; --mute:#a2a9bf;
+    --gold:#e2bb70; --gold2:#f6dfa6; --line:rgba(226,187,112,.35); --teal:#5fd0c8; --glow:rgba(226,187,112,.14);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#090d1a; --bg2:#0f1730; --card:#111a33; --ink:#f3ead3; --mute:#a2a9bf;
+  --gold:#e2bb70; --gold2:#f6dfa6; --line:rgba(226,187,112,.35); --teal:#5fd0c8; --glow:rgba(226,187,112,.14);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--bn);line-height:1.7;
+  background-image:radial-gradient(60rem 30rem at 50% -8%,var(--glow),transparent 70%),radial-gradient(40rem 25rem at 100% 60%,var(--glow),transparent 70%);
+  overflow-x:hidden}
+.frame{max-width:980px;margin:clamp(10px,3vw,32px) auto;padding:6px;border:1px solid var(--line);border-radius:6px}
+.frame>.inner{border:1px solid var(--line);padding:clamp(22px,5vw,64px) clamp(16px,4vw,56px);position:relative}
+.foil{background:linear-gradient(100deg,var(--gold) 0%,var(--gold2) 30%,var(--gold) 52%,var(--gold2) 78%,var(--gold) 100%);
+  background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.hero{text-align:center;padding-bottom:clamp(28px,6vw,64px)}
+.seal{width:min(250px,62vw);margin:0 auto 18px;display:block}
+.seal .ring{transform-origin:150px 150px;animation:spin 60s linear infinite}
+.seal text{font-family:var(--serif);font-size:15.5px;font-weight:600;letter-spacing:.2em;fill:var(--gold)}
+.hello{font-family:var(--serif);font-style:italic;font-size:clamp(20px,3.4vw,28px);color:var(--mute)}
+h1{font-family:var(--serif);margin:6px 0 12px;line-height:1;
+  animation:sheen 2.8s ease-out 1 both}
+.first{display:block;font-style:italic;font-weight:700;font-size:clamp(60px,17vw,158px);line-height:.95;letter-spacing:-.015em;padding:0 .08em .06em;filter:drop-shadow(0 8px 28px var(--glow));animation:sheen 2.8s ease-out 1 both}
+.last{display:flex;align-items:center;justify-content:center;gap:clamp(10px,2.5vw,22px);font-weight:600;font-size:clamp(18px,4.2vw,36px);letter-spacing:.62em;text-transform:uppercase;margin-top:2px}
+.last::before,.last::after{content:"";width:clamp(28px,9vw,90px);height:1px;background:var(--gold)}
+.last span{padding-left:.62em}
+.sub{font-family:var(--serif);font-size:clamp(19px,3vw,26px);letter-spacing:.08em}
+.bn-welcome{font-size:clamp(18px,3vw,24px);margin-top:18px;font-weight:500}
+.maker{color:var(--mute);margin-top:4px}
+.maker b{color:var(--teal);font-weight:600}
+.rule{display:flex;align-items:center;gap:14px;margin:clamp(26px,5vw,48px) auto;max-width:520px;color:var(--gold)}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+.rule i{width:9px;height:9px;transform:rotate(45deg);border:1px solid var(--gold);display:block}
+h2{font-family:var(--serif);font-size:clamp(28px,5vw,42px);font-weight:600;margin-bottom:6px}
+.sec-bn{color:var(--mute);margin-bottom:22px}
+section{margin-top:clamp(36px,6vw,64px)}
+.ledger{display:grid;grid-template-columns:minmax(120px,200px) 1fr;border-top:1px solid var(--line)}
+.ledger dt,.ledger dd{padding:14px 0;border-bottom:1px solid var(--line)}
+.ledger dt{color:var(--mute);font-size:.95rem}
+.ledger dd{font-weight:500;font-size:1.05rem}
+.note{margin-top:18px;color:var(--mute);font-size:.95rem;max-width:62ch}
+.teacher{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;background:var(--card);border:1px solid var(--line);padding:clamp(18px,3vw,32px);border-radius:4px}
+.mono{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:34px;font-weight:700;border:1px solid var(--gold);box-shadow:0 0 0 6px var(--bg),0 0 0 7px var(--line)}
+.teacher h3{font-family:var(--serif);font-size:clamp(26px,4vw,34px);line-height:1.15}
+.role{color:var(--teal);font-weight:600;margin:2px 0 8px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.tile{background:var(--bg);padding:20px 16px}
+.tile small{color:var(--mute);display:block;font-size:.85rem}
+.tile strong{font-family:var(--serif);font-size:1.55rem;font-weight:600;line-height:1.25;display:block}
+.tile.wide{grid-column:span 2}
+.nav{display:flex;flex-wrap:wrap;gap:12px}
+.nav a{flex:1 1 200px;padding:14px 18px;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:999px;text-align:center;font-weight:500;transition:background .25s,color .25s,border-color .25s}
+.nav a:hover,.nav a:focus-visible{background:var(--gold);color:var(--bg);border-color:var(--gold);outline:none}
+.nav a:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.motto{text-align:center}
+.motto .big{font-family:var(--serif);font-weight:700;font-size:clamp(30px,7.2vw,72px);letter-spacing:.06em;line-height:1.1}
+.motto .big span{display:inline-block;margin:0 .25em;color:var(--gold)}
+.motto p{max-width:34ch;margin:18px auto 0;font-size:1.1rem}
+.thanks{text-align:center;margin-top:clamp(36px,6vw,64px);font-family:var(--serif);font-style:italic;font-size:clamp(22px,3.6vw,30px)}
+.thanks small{display:block;font-family:var(--bn);font-style:normal;color:var(--mute);font-size:.95rem;margin-top:6px}
+dialog{width:min(680px,94vw);max-height:88vh;overflow:auto;background:var(--bg);color:var(--ink);border:1px solid var(--gold);border-radius:6px;padding:clamp(18px,4vw,34px);box-shadow:0 30px 80px rgba(0,0,0,.45)}
+dialog::backdrop{background:rgba(5,8,18,.62);backdrop-filter:blur(3px)}
+.x{float:right;font:inherit;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;margin:0 0 8px 8px}
+.x:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.brief{border-top:1px solid var(--line);padding-top:16px}
+.brief p{color:var(--mute);margin:2px 0}
+.brief .b1{font-family:var(--serif);font-size:clamp(24px,4.4vw,32px);font-weight:600;color:var(--ink);line-height:1.2}
+.days{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.days button{flex:1 1 110px;font:inherit;padding:10px 12px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;cursor:pointer;transition:background .25s,color .25s}
+.days button small{display:block;font-family:var(--serif);color:var(--mute);font-size:.85rem;line-height:1.1}
+.days button[aria-selected=true]{background:var(--gold);color:var(--bg);border-color:var(--gold)}
+.days button[aria-selected=true] small{color:var(--bg)}
+.days button:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.dayhead{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.dayhead h3{font-family:var(--serif);font-size:clamp(28px,5vw,40px)}
+.dayhead span{color:var(--mute)}
+.cls{display:grid;grid-template-columns:60px 1fr;gap:14px;padding:18px 0;border-top:1px solid var(--line)}
+.cls .no{font-size:2.6rem;line-height:1;color:var(--gold);font-weight:500}
+.cls .code{font-family:var(--serif);font-size:1.8rem;font-weight:600;line-height:1.1}
+.cls .time{color:var(--teal);font-weight:600;margin-top:2px}
+.cls .meta{display:flex;flex-wrap:wrap;gap:2px 26px;margin-top:6px;color:var(--mute)}
+.cls .meta b{color:var(--ink);font-weight:500}
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px 24px;margin-top:10px;padding-top:18px;border-top:1px solid var(--line);color:var(--mute);font-size:.95rem}
+.legend b{color:var(--ink);font-weight:600}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes sheen{from{background-position:200% 0}to{background-position:0 0}}
+@media (max-width:560px){
+  .ledger{grid-template-columns:1fr}.ledger dt{border-bottom:0;padding-bottom:0}.ledger dd{padding-top:2px}
+  .teacher{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .tile.wide{grid-column:span 1}
+}
+@media (prefers-reduced-motion:reduce){.seal .ring,h1{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main class="frame"><div class="inner">
+
+<header class="hero">
+  <svg class="seal" viewBox="0 0 300 300" role="img" aria-label="Barishal Government Polytechnic Institute seal">
+    <defs><path id="c" d="M150,150 m-118,0 a118,118 0 1,1 236,0 a118,118 0 1,1 -236,0"/></defs>
+    <g class="ring"><text><textPath href="#c" startOffset="0">BARISHAL GOVERNMENT POLYTECHNIC INSTITUTE ✦ COMPUTER SCIENCE TECHNOLOGY ✦</textPath></text></g>
+    <circle cx="150" cy="150" r="136" fill="none" stroke="var(--gold)" stroke-width="1"/>
+    <circle cx="150" cy="150" r="90" fill="none" stroke="var(--gold)" stroke-width="1"/>
+    <circle cx="150" cy="150" r="84" fill="none" stroke="var(--gold)" stroke-width=".5" stroke-dasharray="2 5"/>
+    <text x="150" y="168" text-anchor="middle" style="font-size:54px;letter-spacing:.04em;font-weight:700">AK</text>
+  </svg>
+  <p class="hello">Welcome to my website</p>
+  <h1 class="name"><span class="first foil">Azmaeen</span><span class="last"><span>Khan</span></span></h1>
+  <p class="sub">My Educational Website</p>
+  <p class="bn-welcome">স্বাগতম আমার শিক্ষামূলক ওয়েবসাইটে!</p>
+  <p class="maker">This website is created by <b>Azmaeen Khan</b></p>
+</header>
+
+<div class="rule" aria-hidden="true"><i></i></div>
+
+<section id="institute">
+  <h2 class="foil">Institute Information</h2>
+  <p class="sec-bn">ইনস্টিটিউট সম্পর্কিত তথ্য</p>
+  <div class="brief"><p class="b1">Barishal Government Polytechnic Institute</p><p>Computer Science Technology, Barishal, Bangladesh</p><p>2nd Semester, Group A1, 1st Shift • Class starts 27 September 2026</p></div>
+  <p class="note">এই ওয়েবসাইটটি তৈরি করা হয়েছে শিক্ষার্থীদের ক্লাস রুটিন, তথ্য এবং শিক্ষামূলক বিষয়গুলো সহজে দেখার জন্য।</p>
+</section>
+
+<section id="teacher">
+  <h2 class="foil">Group Guide Teacher</h2>
+  <p class="sec-bn">গ্রুপ গাইড শিক্ষিকা</p>
+  <div class="teacher">
+    <div class="mono foil" aria-hidden="true">FM</div>
+    <div>
+      <h3>Farhana Afroze Mitu <span style="font-family:var(--bn);font-size:.55em;color:var(--mute)">(ম্যাম)</span></h3>
+      <p class="role">Group Teacher</p>
+      <p>কম্পিউটার সায়েন্স টেকনোলজি<br>বরিশাল সরকারি পলিটেকনিক ইনস্টিটিউট</p>
+    </div>
+  </div>
+</section>
+
+<section id="class">
+  <h2 class="foil">My Class Information</h2>
+  <p class="sec-bn">আমার ক্লাসের তথ্য</p>
+  <div class="tiles">
+    <div class="tile wide"><small>Department</small><strong>Computer Science Technology</strong></div>
+    <div class="tile"><small>Semester</small><strong>2nd Semester</strong></div>
+    <div class="tile"><small>Group</small><strong>A1</strong></div>
+    <div class="tile"><small>Shift</small><strong>1st Shift</strong></div>
+    <div class="tile"><small>Class Routine</small><strong>Sunday – Thursday</strong></div>
+    <div class="tile"><small>Academic Session</small><strong>2026</strong></div>
+  </div>
+</section>
+
+<dialog id="rt" aria-label="Class routine"><button type="button" class="x" id="rtx" aria-label="Close">✕</button>
+  <div class="days" id="days" role="tablist"></div>
+  <div id="day" role="tabpanel" aria-live="polite"></div>
+  <div class="legend" id="legend"></div>
+</dialog>
+
+<section>
+  <h2 class="foil">Explore My Website</h2>
+  <p class="sec-bn">এখান থেকে যেকোনো অংশে যান</p>
+  <nav class="nav" aria-label="Explore">
+    <a href="#routine" data-rt>📅 Class Routine</a>
+    <a href="#routine" data-rt>📖 Subject Information</a>
+    <a href="#teacher">👨‍🏫 Teacher Information</a>
+    <a href="#institute">🏛️ Institute Information</a>
+  </nav>
+</section>
+
+<div class="rule" aria-hidden="true"><i></i></div>
+
+<section class="motto">
+  <p class="big foil" style="display:none"></p>
+  <div class="big"><span class="foil">Learn</span>•<span class="foil">Create</span>•<span class="foil">Achieve</span></div>
+  <p>জ্ঞান অর্জন করি,<br>নতুন কিছু তৈরি করি,<br>সাফল্যের পথে এগিয়ে যাই।</p>
+</section>
+
+<footer class="thanks foil" style="-webkit-text-fill-color:initial;background:none;color:var(--ink)">
+  Thank you for visiting
+  <small>My Website • My Education • My Future</small>
+</footer>
+
+</div></main>
+<script>
+const T=["08:00 AM","08:45 AM","09:30 AM","10:15 AM","11:00 AM","11:45 AM","12:30 PM","01:15 PM"];
+const P={KB:"Khaleda Begum",MHI:"Md. Hasibul Islam",KHN:"Khondokar Hafsa Najnin",LA:"Lylun Ara Lema",SH:"Saddam Hossain","CT-1":"","RS-2":""};
+const B=["১","২","৩","৪","৫"];
+// [subject code, teacher short name, room, first period, number of periods]
+const D=[
+["রবিবার","Sunday",[["25712","KB","340",1,1],["25911","KHN","340",2,2],["26711","SH","340",4,1],["25811","LA","CMT-2",5,3]]],
+["সোমবার","Monday",[["26711","SH","239",1,1],["25811","LA","CMT-4",2,3],["25912","RS-2","CMT-2",5,3]]],
+["মঙ্গলবার","Tuesday",[["25911","KHN","340",1,1],["25912","RS-2","340",2,3],["26711","SH","PHY LAB",5,3]]],
+["বুধবার","Wednesday",[["21011","CT-1","DL-3",1,3],["26711","SH","339",4,1],["25911","KHN","339",5,2],["25711","MHI","339",7,1]]],
+["বৃহস্পতিবার","Thursday",[["25712","KB","339",1,1],["25912","RS-2","339",2,1],["25711","MHI","339",3,1],["21011","CT-1","DL-1",4,3]]]
+];
+const nm=s=>P[s]||"নাম রুটিনে দেওয়া নেই";
+const tabs=document.getElementById("days"),out=document.getElementById("day");
+function show(i){
+  [...tabs.children].forEach((b,j)=>b.setAttribute("aria-selected",j===i));
+  const [bn,en,c]=D[i];
+  out.innerHTML='<div class="dayhead"><h3 class="foil">'+bn+'</h3><span>'+en+' • মোট ক্লাস '+B[c.length-1]+'টি</span></div>'+
+  c.map((x,k)=>'<div class="cls"><div class="no">'+B[k]+'</div><div><div class="code">'+x[0]+'</div>'+
+  '<div class="time">'+T[x[3]-1]+' – '+T[x[3]-1+x[4]]+'</div>'+
+  '<div class="meta"><span>শিক্ষক: <b>'+nm(x[1])+'</b> ('+x[1]+')</span><span>রুম: <b>'+x[2]+'</b></span></div></div></div>').join("");
+}
+D.forEach((d,i)=>{const b=document.createElement("button");b.type="button";b.setAttribute("role","tab");b.innerHTML=d[0]+"<small>"+d[1]+"</small>";b.onclick=()=>show(i);tabs.appendChild(b)});
+document.getElementById("legend").innerHTML=Object.keys(P).filter(k=>P[k]).map(k=>"<div><b>"+k+"</b> – "+P[k]+"</div>").join("");
+const g=new Date().getDay();show(g<5?g:0);
+const rt=document.getElementById("rt");
+document.querySelectorAll("[data-rt]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();rt.showModal()}));
+document.getElementById("rtx").onclick=()=>rt.close();
+rt.addEventListener("click",e=>{if(e.target===rt)rt.close()});
+</script>
+</body>
+</html>
